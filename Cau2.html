@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function tryRemoteFromArray(arr,index) {
+        let newArr=[];
+        for (let i=0;i<arr.length;i++){
+            if (i !==index){
+                newArr.push(arr[i])
+            }
+        }
+        return newArr;
+
+    }
+    let array=[1,2,4,5,6];
+    let number=2;
+    document.write(tryRemoteFromArray(array,number));
+</script>
+</body>
+</html>

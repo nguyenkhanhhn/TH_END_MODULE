@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function isPrime(num) {
+        let check = true;
+        if (num < 2) {
+            check = false;
+        }
+        for (let i = 2; i <= Math.sqrt(num); i++) {
+            if (num % i == 0) {
+                check = false;
+                break;
+            } else {
+                check = true;
+            }
+
+        }
+        return check;
+    }
+
+    let input = Number(prompt('Nhap mot so bat ki'));
+    document.write(isPrime(input));
+</script>
+</body>
+</html>
